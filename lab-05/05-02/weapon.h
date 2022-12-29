@@ -18,10 +18,10 @@ private:
 	WeaponEnum some_val;
 
 public:
-	std::string get_name();
-	int get_strength();
-	int get_weight();
-	WeaponEnum get_enum();
+	std::string get_name() const;
+	virtual int get_strength() const;
+	int get_weight() const;
+	WeaponEnum get_enum() const;
 	void set_name(std::string name);
 	void set_strength(int strength);
 	void set_weight(int weight);

@@ -8,19 +8,19 @@ int Characteristic::GetDamage(Weapon& a) {
 	return a.strength + this->strenght;
 }
 
-std::string Weapon::get_name() {
+std::string Weapon::get_name() const {
 	return name;
 }
 
-int Weapon::get_strength() {
+int Weapon::get_strength() const {
 	return strength;
 }
 
-int Weapon::get_weight() {
+int Weapon::get_weight() const {
 	return weight;
 }
 
-WeaponEnum Weapon::get_enum() {
+WeaponEnum Weapon::get_enum() const {
 	return some_val;
 }
 
